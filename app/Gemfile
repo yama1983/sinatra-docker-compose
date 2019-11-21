@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', "~> 2.0.7"
-gem 'unicorn', "~> 5.5.1"
+group :development, :test do
+  gem 'ruby-debug-ide'
+end
+
+gem 'sinatra', '~> 2.0.7'
+gem 'unicorn', '~> 5.5.1'
