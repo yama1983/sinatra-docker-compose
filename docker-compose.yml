@@ -4,11 +4,14 @@ services:
     tty: true
     container_name: 'sinatra-app'
     build: .
-    command: bundle exec unicorn -c unicorn.conf
+    working_dir: /app
+    #command: bundle exec unicorn -c unicorn.conf
+    command: tail -f /dev/null
     volumes:
       - ./app:/app
     ports:
       - "15000:5000"
+      - "1234:1234"
     depends_on:
       - mysql
       - cache

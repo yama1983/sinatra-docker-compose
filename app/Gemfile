@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :development, :test do
   gem 'ruby-debug-ide'
+  gem 'debase'
 end
 
 gem 'sinatra', '~> 2.0.7'
