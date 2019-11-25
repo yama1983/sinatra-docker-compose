@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/reloader'
 require 'unicorn'
 
 class Base < Sinatra::Base
@@ -6,5 +7,6 @@ class Base < Sinatra::Base
 
   configure :production, :development do
     enable :logging
+    register Sinatra::Reloader
   end
 end

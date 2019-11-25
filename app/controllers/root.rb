@@ -3,8 +3,7 @@ require 'unicorn'
 
 class Root < Base
   get '/' do
-    a = 1+1
-    "hello world!!!#{a}"
+    "hello world!!!!"
   end
 
   get '/env' do
