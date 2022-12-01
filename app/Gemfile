@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', "~> 2.0.7"
+gem 'sinatra', "~> 2.2.3"
 gem 'unicorn', "~> 5.5.1"
